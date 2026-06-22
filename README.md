@@ -1,4 +1,4 @@
-<img width="1067" height="266" alt="Ảnh màn hình 2026-06-22 lúc 08 02 28" src="https://github.com/user-attachments/assets/67e234da-3171-41c8-89b6-9100acf03e06" /># lab9
+## lab9
 ## 1. Mục tiêu
 
 Thực hành công cụ kiểm thử tự động **Selenium WebDriver** kết hợp framework **pytest**, xây dựng tối thiểu 3 test case kiểm thử tự động cho một website thực tế.
