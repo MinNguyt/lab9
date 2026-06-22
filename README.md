@@ -58,43 +58,7 @@ selenium-project/
 
 **Tổng cộng: 8 test case con, bao phủ 3 chức năng chính (đăng nhập, giỏ hàng, đăng xuất).**
 
-## 6. Hướng dẫn cài đặt & chạy
-
-### Bước 1: Clone repo
-```bash
-git clone <link-repo-cua-ban>
-cd selenium-project
-```
-
-### Bước 2: Tạo môi trường ảo & cài thư viện
-```bash
-python3 -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### Bước 3: Yêu cầu hệ thống
-- Đã cài **Google Chrome** trên máy (webdriver-manager sẽ tự tải driver phù hợp).
-
-### Bước 4: Chạy toàn bộ test
-```bash
-pytest -v
-```
-
-### Chạy riêng từng file test
-```bash
-pytest tests/test_01_login.py -v
-pytest tests/test_02_add_to_cart.py -v
-pytest tests/test_03_logout.py -v
-```
-
-### Xem trình duyệt chạy trực quan (không headless)
-Mở file `conftest.py`, comment dòng:
-```python
-options.add_argument("--headless=new")
-```
-
-## 7. Kỹ thuật Selenium đã áp dụng
+## 6. Kỹ thuật Selenium đã áp dụng
 
 - Định vị phần tử bằng `By.ID`, `By.CLASS_NAME`, `By.CSS_SELECTOR`
 - `implicitly_wait` để chờ phần tử tải xong
@@ -103,7 +67,7 @@ options.add_argument("--headless=new")
 - Chạy headless để có thể tích hợp CI/CD (GitHub Actions) sau này
 - `webdriver-manager` giúp không cần tải ChromeDriver thủ công
 
-## 8. Kết quả
+## 7. Kết quả
 
 Khi chạy trên máy có Chrome, toàn bộ 8 test case đều **PASS**.
 >><img width="1053" height="270" alt="Ảnh màn hình 2026-06-22 lúc 08 02 52" src="https://github.com/user-attachments/assets/58e73914-14bd-41b4-8c4f-df982392647a" />
